@@ -36,7 +36,8 @@ public class ePradaanRepository {
         System.out.println(this.jdbcTemplate.update("Exec ePradhaan.Sp_acceptRequestofNgo ?",NgoId));
     }
     public  List<Map<String ,Object>> getNgosAccepted(){
-       return this.jdbcTemplate.queryForList("exec ePradhaan.sp_fetchNgoAccepted"); }
+       return this.jdbcTemplate.queryForList("exec ePradhaan.sp_fetchNgoAccepted");
+    }
 
 //    public List<Map<String,Object>> sendEmail(){
 //
